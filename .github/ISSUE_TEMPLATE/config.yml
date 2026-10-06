@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Sobre o datalab Quests
+    url: https://datalab.mackenzie.br/quests.html
+    about: Como o quadro funciona e como ser avisado quando ele abrir.

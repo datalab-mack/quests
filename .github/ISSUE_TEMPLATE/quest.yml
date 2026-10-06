@@ -1,0 +1,73 @@
+name: Quest
+description: Abrir uma quest nova (professores do datalab)
+title: "[P] "
+body:
+  - type: input
+    id: projeto
+    attributes:
+      label: Projeto
+      description: Projeto do laboratório ao qual a quest pertence.
+    validations:
+      required: true
+  - type: dropdown
+    id: tamanho
+    attributes:
+      label: Tamanho
+      options:
+        - P
+        - M
+        - G
+    validations:
+      required: true
+  - type: input
+    id: horas
+    attributes:
+      label: Horas
+      description: Horas que a quest aprovada vale, de 2 a 8.
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      description: Individual tem um aluno por vez e pede reivindicação. Cooperativa pode ser feita por vários alunos.
+      options:
+        - Individual
+        - Cooperativa
+    validations:
+      required: true
+  - type: input
+    id: responsavel
+    attributes:
+      label: Professor responsável
+      description: Quem revisa a entrega e assina as horas.
+    validations:
+      required: true
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: De onde vem a tarefa e para que o resultado serve.
+    validations:
+      required: true
+  - type: textarea
+    id: tarefa
+    attributes:
+      label: O que fazer
+      description: Passo a passo, com links para dados, ferramentas e instruções.
+    validations:
+      required: true
+  - type: textarea
+    id: entrega
+    attributes:
+      label: Entrega esperada
+      description: O que o aluno anexa na issue e como a entrega é conferida.
+    validations:
+      required: true
+  - type: textarea
+    id: requisitos
+    attributes:
+      label: Pré-requisitos
+      description: O que o aluno precisa saber ou ter. Deixe em branco se não houver.
+    validations:
+      required: false
